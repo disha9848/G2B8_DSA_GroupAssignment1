@@ -16,4 +16,12 @@ public class HrDepartment extends SuperDepartment {
 	String doActivity() {
 		return  "team Lunch";
 	}
+	
+	void displayDepartmentDetails() {
+		System.out.println("Welcome to "+ departmentName() + '\n' + 
+				doActivity() + '\n' +
+				getTodaysWork() + '\n' +
+				getWorkDeadline() + '\n' +
+				isTodayAHoliday()+ '\n');
+	}
 }

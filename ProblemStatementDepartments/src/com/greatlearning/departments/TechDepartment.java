@@ -16,4 +16,12 @@ public class TechDepartment extends SuperDepartment{
 	String getTechStackInformation() {
 		return  "Core Java";
 	}
+	
+	void displayDepartmentDetails() {
+		System.out.println("Welcome to "+ departmentName() + '\n' + 
+				getTodaysWork() + '\n' +
+				getWorkDeadline() + '\n' +
+				getTechStackInformation() + '\n' +
+				isTodayAHoliday()+ '\n');
+	}
 }

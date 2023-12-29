@@ -12,4 +12,11 @@ public class AdminDepartment extends SuperDepartment{
 	String getWorkDeadline() {
 		return  "Complete by EOD";
 	}
+	
+	void displayDepartmentDetails() {
+		System.out.println("Welcome to "+ departmentName() + '\n' + 
+				getTodaysWork() + '\n' +
+				getWorkDeadline() + '\n' +
+				isTodayAHoliday()+ '\n');
+	}
 }
